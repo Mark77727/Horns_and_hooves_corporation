@@ -1,0 +1,273 @@
+{% load static %}
+{% load bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static "userup/styles.css" %}" rel="stylesheet" >
+    <link href="{% static "userup/fonts.css" %}" rel="stylesheet" >
+    <title>Document</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-xl navbar-dark ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <p>UserUP</p>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <p>О нас</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <p>Портфолио</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <p>Контакты</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="main-border col-xl-12">
+                <div class="main-greeting">
+                    <div class="line"></div>
+                    <div class="greeting">
+                        <p>Привет!</p>
+                    </div>
+                </div>
+                <div class="main-slogan">
+                    <p>Мы <span class="color-main-slogan"> - Команда дизайнеров, <br>программистов, рекламщиков</span></p>
+                </div>
+                <div class="low-slogan">
+                    <p>Мы создаем привлекательные и функциональные <br>решения, соответствующие современным трендам</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="our-project">
+                <h1>Наши проекты</h1>
+                <div class="skils">
+                    <nav>
+                        <ul class="our-skils">
+                            <li>
+                                <a class="nav" href="#">
+                                    <p>SMM</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="nav" href="#">
+                                    <p>SEO</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="nav" href="#">
+                                    <p>Дизайн</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="nav" href="#">
+                                    <p>Сайт</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="main-card-header">
+                                <div class="card-header-discription">
+                                    <p class="card-title">Единая Россия</p>
+                                    <p class="card-text">Официальный портал партии Единая Россия. Информация без лишних эмоций, важные события и позиция партии - просто и точно.</p>
+                                    <a href="#" class="btn">Перейти на сайт</a>
+                                </div>
+                                <div class="card-header-img">
+                                    <img src="{% static "userup/img/Intersect.png" %}" class="card-img-top" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="form">
+                <div class="text-discription col-xl-5">
+                    <div class="form-title-order">
+                        <p class="form-title-order-main">Обсудим проект?</p>
+                        <p class="form-title-order-low">Остались вопросы? Оставьте заявку прямо сейчас и с Вами свяжется наш эксперт, поможем составить техническое задание, проработать макет сайта, ответим на вопросы.</p>
+                    </div>
+                    <div class="form-title-action">
+                        <p class="form-title-main">Свяжитесь с нами!</p>
+                        <p class="form-title-phone">+ 7 777 777 77 77</p>
+                        <p class="form-title-email">rogaikopyta@mail.ru</p>
+                        <div class="messengers">
+                            <img src="{% static 'userup/img/telegramm.png'%}" class="messengers-img-top" alt="...">
+                            <img src="{% static "userup/img/vk.png"%}" class="messengers-img-top" alt="...">
+                            <img src="{% static "userup/img/whatsapp.png"%}" class="messengers-img-top" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-input col-xl-7 col-md-7">
+                    <div class="form-group-input">
+                        <form>
+                            <div class="form-group">
+                                <!--<label for="exampleFormControlInput1">Email address</label>-->
+                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                            </div>
+                            <div class="form-group">
+                                <!--<label for="exampleFormControlInput1">Email address</label>-->
+                                <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="+7 777 777 77 77">
+                            </div>
+                            <div class="form-group">
+                                <!--<label for="exampleFormControlTextarea1">Example textarea</label>-->
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Пару слов о вашем проекте"></textarea>
+                            </div>
+                            <a href="#" class="btn">Получить консультацию</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--<header class="menu-bar ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-xl-2 ">
+                    <div class="logo ">
+                        <p> UserUP</p>
+                    </div>
+                </div>
+                <div class="col-xl-10 ">
+                    <nav>
+                        <ul class="menu d-flex justify-content-center ">
+                            <li>
+                                <a href="# ">О нас</a>
+                            </li>
+                            <li>
+                                <a href="# ">Проекты</a>
+                            </li>
+                            <li>
+                                <a href="# ">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-page ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-xl-8 ">
+                    <div class="main-border ">
+                        <div class="main-greeting ">
+                            <div class="line "></div>
+                            <div class="greeting ">
+                                <p>Привет!</p>
+                            </div>
+
+                            <div class="main-slogan ">
+                                <p>Мы <span class="color-main-slogan ">- Команда дизайнеров, программистов, рекламщиков</span></p>
+                            </div>
+                            <div class="low-slogan ">
+                                <p>Мы создаем привлекательные и функциональные решения, соответствующие современным трендам</p>
+                            </div>
+                        </div>
+                        <div class="circls ">
+                            <div class="big-circl ">
+                                <img src='img/Ellipse 1.png'>
+                            </div>
+                            <div class="small-circl ">
+                                <img src='img/Ellipse 2.png'>
+                            </div>
+                        </div>-->
+
+    <!--<div class="project-page ">
+        <div class="container ">
+            <div class="row ">
+                <div class=" ">
+                    <div class="heading ">
+                        <p>Проекты</p>
+                    </div>
+
+                    <div class="menu-project ">
+                        <div class=" ">
+                            <nav>
+                                <ul class="menu d-flex ">
+                                    <li>
+                                        <a href="# ">О нас</a>
+                                    </li>
+                                    <li>
+                                        <a href="# ">Проекты</a>
+                                    </li>
+                                    <li>
+                                        <a href="# ">Контакты</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+
+                    <div class="cart-project ">
+                        <div class="container ">
+                            <div class="cart-page ">
+                                <div class="description-page ">
+                                    <div class="name-project ">
+                                        <p>Единая Россия</p>
+                                    </div>
+                                    <div class="description-project ">
+                                        <p>Официальный портал партии Единая <br>Россия. Информация без лишних эмоций, <br>важные события и позиция партии - <br>просто и точно.</p>
+                                    </div>
+
+                                    <div class="link-project ">
+                                        <a href="# ">Ссылка на сайт</a>
+
+                                    </div>
+                                </div>
+                                <div class="img-project ">
+                                    <div class="img-window ">
+                                        <img src="img/Intersect.png " class="img ">-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM " crossorigin="anonymous "></script>
+</body>
+
+</html>
